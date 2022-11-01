@@ -108,8 +108,46 @@
 
         <!-- skills page -->
         <section class="page skills" id="skill">
-            <div class="connect">Skills<br>
-                Under development swipe below</div>
+            <div class="heading">
+                <h1>SKILLS</h1>
+            </div>
+            <!-- trying -->
+
+            <div class="skillList">
+                <div class="toggle"><h1>+</h1></div>
+                <li style="--s:0;">
+                    <h3>JAVA</h3>
+                </li>
+                <li style="--s:1;">
+                    <h3>Python</h3>
+                </li>
+                <li style="--s:2;">
+                    <h3>HTML</h3>
+                </li>
+                <li style="--s:3;">
+                    <h3>CSS</h3>
+                </li>
+                <li style="--s:4;">
+                    <h3>C</h3>
+                </li>
+                <li style="--s:5;">
+                    <h3>C++</h3>
+                </li>
+                <li style="--s:6;">
+                    <h3>SASS</h3>
+                </li>
+                <li style="--s:6;">
+                    <h3>RUBY</h3>
+                </li>
+            </div>
+
+            <!-- trying -->
+
+            
+
+
+            <!-- <div class="connect">Skills<br>
+                Under development swipe below</div> -->
         </section>
         <!-- /skills page -->
 
@@ -265,6 +303,12 @@
             }
         });
     });
+
+    let toggle = document.querySelector('.toggle');
+    let skillList = document.querySelector('.skillList');
+    toggle.onclick = function(){
+        skillList.classList.toggle('active');
+    }
 </script>
 
 </html>
