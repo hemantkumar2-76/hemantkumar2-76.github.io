@@ -413,7 +413,7 @@ section {
 
 
 
-/* contact */
+/* contact ka start*/
 .grid-container {
   height: 100%;
   display: grid;
@@ -499,7 +499,83 @@ section {
     0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* khushi */
 
+.skills .heading{
+  color: var(--theme);
+  font-family: rubik;
+  font-size: 32px;
+  text-align: center;
+}
+
+.skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.skillList{
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skillList li{
+  position: absolute;
+  left: 19px;
+  list-style: none;
+  transform-origin: 185px;
+  transition: 0.5s;
+  transition-delay: calc(0.1s * var(--s));
+  transform: rotate(0deg) translateX(135px);
+}
+.skillList.active li{
+  transform: rotate(calc(360deg / 7 * var(--s)));
+}
+.skillList li h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 50px;
+  background: var(--theme);
+  color: #0C0C0C;
+  transform: rotate(calc(360deg / -7 * var(--s)));
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+.skillList li h3:hover{
+  width: 90px;
+  height: 60px;
+  background: #0C0C0C;
+  color: var(--theme);
+  border: 2px solid var(--theme);
+  transition: 0.5s;
+}
+.toggle{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #0C0C0C;
+  color: #eb5c09;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  border: 2px solid #7AEB09;
+  border-radius: 100%;
+  cursor: pointer;
+  box-shadow:  0 3px 4px rgba(0, 0, 0, 0.15);
+  font-size: 2em;
+  transition: transform 1.25s;
+}
+.skillList.active .toggle{
+  transform:  rotate(315deg);
+}
 
 @media screen and (max-width: 1000px) {
   .grid-container {
@@ -508,7 +584,7 @@ section {
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
   /* .home__title {
-    width: 300px;
+    width: 300px hai;
   } */
   .home__title {
   font-size: 36px;
