@@ -16,7 +16,7 @@ background: #0C0C0C;
     color: white;
     height: 100vh;
     width: 100vw;
-}
+}a
 
 .main,body{
     scroll-behavior: smooth;
@@ -237,7 +237,7 @@ body::-webkit-scrollbar-thumb:active {
   z-index: 10;
 }
 
-.hamburger {
+.hamburger { /* --- the drawer wala line */
   position: fixed;
   filter: invert(1);
   border: none;
@@ -405,7 +405,7 @@ section {
 }
 
 .home__mail {
-  position: absolute;
+  position: absolute; /* value fix hai */
   left: 12px;
   bottom: 12px;
 }
@@ -499,9 +499,124 @@ section {
     0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* khushi */
+.about_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border-radius: 5%;
 
-.skills .heading{
+}
+
+.about_description {
+  text-align: center;
+
+}
+
+.about_description {
+  text-align: center;
+}
+
+.about_info-title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--first-color);
+}
+
+.about_button {
+  display: flex;
+  justify-content: center;
+}
+.section_title {
+  font-size: 350%;
+}
+
+.section_subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.section_title,
+.section_subtitle {
+  text-align: center;
+}
+
+
+.about_image_div img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5%;
+  width: 300px;
+  height: auto;
+}
+
+.about_description {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'rubik';
+}
+
+.about_description {
+  text-align: center;
+}
+
+.about_info-title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--first-color);
+}
+
+.about_button {
+  display: flex;
+  justify-content: center;
+}
+
+
+.green-block{
+  background-color: var(--theme);
+  width: 30%;
+  height: 80vh;
+  margin-left: 50px;
+  float: right;
+}
+
+.section_title {
+  font-size: 350%;
+}
+
+.section_subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.section_title,
+.section_subtitle {
+  text-align: center;
+}
+
+.container {
+  /* max-width: 768px; */
+  margin-top: 100px;
+  margin-left: var(--mb-1-5);
+  display: flex;
+  margin-right: var(--mb-1-5);
+}
+
+
+
+
+
+
+
+
+
+
+/* skill start hua  */
+
+.page .heading{
   color: var(--theme);
   font-family: rubik;
   font-size: 32px;
@@ -520,7 +635,7 @@ section {
   width: 400px;
   height: 400px;
   background-color: none;
-  display: flex;
+  display: flex;/* 1 dabba hai flex board  */
   justify-content: center;
   align-items: center;
 }
@@ -576,6 +691,16 @@ section {
 .skillList.active .toggle{
   transform:  rotate(315deg);
 }
+@keyframes fadeIn{
+  to{
+    opacity: 1;
+  }
+}
+
+.fade-in{
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
 
 @media screen and (max-width: 1000px) {
   .grid-container {
@@ -583,13 +708,18 @@ section {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
-  /* .home__title {
-    width: 300px hai;
-  } */
   .home__title {
   font-size: 36px;
   width:300px;
 } 
+.container {
+  max-width: 768px;
+  margin-top: 0;
+  margin-left: var(--mb-1-5);
+  display: flex;
+  flex-direction: column;
+  margin-right: var(--mb-1-5);
+}
   .connect {
     height: 100px;
     font-size: 32px;
@@ -599,7 +729,7 @@ section {
       margin: 30px;
   }
   .green {
-    transform: translateX(-100px);
+    transform: translateX(-100px); /* function will act like 3d object for making it more attractive... */
   }
 
   .white {
@@ -627,7 +757,7 @@ section {
     }
 
     100% {
-    transform: scale(0.95);
+    transform: scale(0.95);/* used to zoom the image out  */
     box-shadow: 0 0 0 0 rgba(122, 235, 9, 0);
     }
     }
