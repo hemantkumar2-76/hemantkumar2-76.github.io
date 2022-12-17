@@ -649,7 +649,7 @@ section {
   transform: rotate(0deg) translateX(135px);
 }
 .skillList.active li{
-  transform: rotate(calc(360deg / 7 * var(--s)));
+  transform: rotate(calc(360deg / 9 * var(--s)));
 }
 .skillList li h3{
   display: flex;
@@ -659,7 +659,7 @@ section {
   height: 50px;
   background: var(--theme);
   color: #0C0C0C;
-  transform: rotate(calc(360deg / -7 * var(--s)));
+  transform: rotate(calc(360deg / -9 * var(--s)));
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
   transition: 0.5s;
 }
